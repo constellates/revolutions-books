@@ -30,13 +30,14 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"No tests\"",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -u \"constellates <mail@constellates.com>\""
+    "deploy": "gh-pages -d public -u \"constellates <mail@constellates.com>\"",
+    "deploy:clear-cache": "rm -rf node_modules/gh-pages/.cache"
   },
   "repository": {
     "type": "git",
