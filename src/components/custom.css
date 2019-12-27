@@ -1,0 +1,46 @@
+.has-bg-img {
+  background: url('/revolutions-books/hero-book-image.jpg') center center;
+  background-size: cover;
+}
+
+
+@media screen and (min-width: 769px), print {
+  .hero.is-huge .hero-body {
+    padding-bottom: 23rem;
+    padding-top: 23rem;
+  }
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: lighter;
+  line-height: 1.125;
+  word-break: break-word;
+}
+
+/* .is-white {
+  background: #FFF;
+} */
+
+.is-taupe {
+  background: #F2EDE9;
+}
+
+.hero .title, .hero.is-white .title, .section .title {
+  font-size: 2.5rem;
+  color: #A52726;
+  font-style: italic;
+}
+
+.navbar-item, a.navbar-item:hover {
+  background: #FFF;
+  color: #500000;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.underscore div {
+  margin: 0 auto 30px auto;
+  border-bottom: 2px solid #A52726;
+  width: 80px;
+}

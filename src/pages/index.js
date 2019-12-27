@@ -11,22 +11,23 @@ const IndexPage = ({ data: { allInstaNode } }) => (
   <Layout>
     <SEO title="Home" />
 
-    <section className="hero is-link is-large">
+    <section className="hero is-link is-huge has-bg-img">
       <div className="hero-body">
         <div className="container">
-          <p className="title">
+          <p className="hero-title has-text-centered">
             We buy and sell new and used books, vinyl and collectibles.
           </p>
         </div>
       </div>
     </section>
 
-    <section id="about" className="hero is-light is-medium">
+    <section id="about" className="hero is-white is-medium">
       <div className="hero-body">
         <div className="container">
           <h1 className="title has-text-centered">
             About Us
           </h1>
+          <div className="underscore"><div></div></div>
           <h2 className="subtitle">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus nulla est, at porttitor metus pulvinar laoreet. In ac ipsum at augue dapibus malesuada at in odio. Duis tempor vel ante vitae rhoncus. Cras eu purus at erat vehicula aliquam ut a purus. Donec pretium ut augue quis laoreet. Donec nec urna ut arcu ultrices tincidunt. Phasellus sed justo molestie, vulputate nulla at, viverra tellus. Fusce nisl diam, placerat hendrerit libero vitae, finibus luctus mauris. Quisque non dui id ligula venenatis efficitur quis euismod mi. Nam laoreet orci non aliquam maximus. Nunc dictum leo in ante sollicitudin, eu iaculis lacus rutrum.
           </h2>
@@ -34,35 +35,37 @@ const IndexPage = ({ data: { allInstaNode } }) => (
       </div>
     </section>
 
-    <section id="selling" className="hero is-info is-medium">
+    <section id="selling" className="hero is-taupe is-medium">
       <div className="hero-body">
         <div className="container">
           <h1 className="title has-text-centered">
             Interested In Selling?
           </h1>
+          <div className="underscore"><div></div></div>
           <h2 className="subtitle">
             We're always buying inventory. Check out the link below to learn more about some of our frequently asked questions about selling.
           </h2>
-          <button className="button is-light">Learn More</button>
+          <button className="button is-white">Learn More</button>
         </div>
       </div>
     </section>
 
-    <section id="contact" className="hero is-light is-medium">
+    <section id="contact" className="hero is-white is-medium">
       <div className="hero-body">
         <div className="container">
           <h1 className="title has-text-centered">
             Hours & Location
           </h1>
+          <div className="underscore"><div></div></div>
           <div className="columns">
             <div className="column">
-              <GoogleMap
+              {/* <GoogleMap
                 googleMapsApiKey="AIzaSyBP4Aqq6NqwOd5AlRHTTzoatb3BBAiMzNg" 
                 address={{
                   lat: '45.5908652',
                   lng: '-122.7552229'
                 }}
-              />
+              /> */}
             </div>
             <div className="column">
               <div className="container">
@@ -100,10 +103,11 @@ const IndexPage = ({ data: { allInstaNode } }) => (
       </div>
     </section>
 
-    <section className="section">
+    <section className="section is-taupe">
           <h1 className="title has-text-centered">
             Follow Along
           </h1>
+          <div className="underscore"><div></div></div>
       {/* <Container
         title="Public scraping"
         text="Using public scraping you are able to retrieve the last 12 posts of
@@ -136,7 +140,7 @@ export const pageQuery = graphql`
           comments
           localFile {
             childImageSharp {
-              fluid(quality: 70, maxWidth: 600, maxHeight: 600) {
+              fluid(quality: 100, maxWidth: 600, maxHeight: 600) {
                 ...GatsbyImageSharpFluid_withWebp
               }
             }
