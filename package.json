@@ -36,7 +36,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"No tests\"",
-    "deploy": "NODE_DEBUG=gh-pages gh-pages -d public -u \"constellates <mail@constellates.com>\"",
+    "deploy": "node ./publish.js",
     "deploy:clear-cache": "rm -rf node_modules/gh-pages/.cache"
   },
   "repository": {
