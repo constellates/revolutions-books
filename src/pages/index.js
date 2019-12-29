@@ -14,7 +14,7 @@ const IndexPage = ({ data: { allInstaNode } }) => (
       <div className="hero-body">
         <div className="container">
           <p className="hero-title has-text-centered">
-            We buy and sell new and used books, vinyl and collectibles.
+            Try a change. We buy and sell new and used books, vinyl and collectibles.
           </p>
         </div>
       </div>
