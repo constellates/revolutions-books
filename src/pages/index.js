@@ -5,7 +5,6 @@ import Layout from "../components/layout"
 // import Image from "../components/image"
 import InstagramPosts from "../components/instagram-posts"
 import SEO from "../components/seo"
-import GoogleMap from '../components/google-map';
 
 const IndexPage = ({ data: { allInstaNode } }) => (
   <Layout>
@@ -66,6 +65,13 @@ const IndexPage = ({ data: { allInstaNode } }) => (
                   lng: '-122.7552229'
                 }}
               /> */}
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2791.985365619386!2d-122.7574852842266!3d45.59083893300484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a9278d21a269%3A0x983fffa92e9d53c!2sRevolutions%20Bookshop!5e0!3m2!1sen!2sus!4v1577594623557!5m2!1sen!2sus"
+                width="500"
+                height="500"
+                frameborder="0"
+                style={{ border:0 }}
+                allowfullscreen="false"></iframe>
             </div>
             <div className="column">
               <div className="container">
