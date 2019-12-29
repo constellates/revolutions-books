@@ -7,7 +7,7 @@ ghpages.publish('public', {
     name: 'Zack',
     email: 'mail@constellates.com'
   },
-  repo: 'https://' + GH_TOKEN + '@github.com/constellates/revolutions-books.git master:gh-pages',
+  repo: 'https://' + GH_TOKEN + '@github.com/constellates/revolutions-books.git',
   silent: false
 }, (error) => {
   if (error) {
