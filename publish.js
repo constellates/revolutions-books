@@ -8,7 +8,7 @@ ghpages.publish('public', {
     email: 'mail@constellates.com'
   },
   repo: 'https://' + GH_TOKEN + '@github.com:constellates/revolutions-books.git',
-  silent: true
+  silent: false
 }, (error) => {
   if (error) {
     console.log(error);
