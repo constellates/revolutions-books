@@ -20,4 +20,4 @@ jobs:
     - name: npm build
       run: npm run build
     - name: npm deploy
-      run: npm run deploy
+      run: npm run deploy ${{ secrets.GITHUB_TOKEN }}
