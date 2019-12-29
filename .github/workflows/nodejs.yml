@@ -21,5 +21,3 @@ jobs:
       run: npm run build
     - name: npm deploy
       run: npm run deploy
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
