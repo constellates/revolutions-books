@@ -10,12 +10,14 @@ const IndexPage = ({ data: { allInstaNode } }) => (
   <Layout>
     <SEO title="Home" />
 
+    <div className="navbar-spacer"></div>
+
     <section className="hero is-link is-huge has-bg-img">
       <div className="hero-body">
         <div className="container">
-          <p className="hero-title has-text-centered">
-            Try a change. We buy and sell new and used books, vinyl and collectibles.
-          </p>
+          <h1 className="hero-title has-text-centered">
+            We buy and sell new and used books, vinyl and collectibles.
+          </h1>
         </div>
       </div>
     </section>
@@ -23,28 +25,29 @@ const IndexPage = ({ data: { allInstaNode } }) => (
     <section id="about" className="hero is-white is-medium">
       <div className="hero-body">
         <div className="container">
-          <h1 className="title has-text-centered">
+          <h2 className="title has-text-centered">
             About Us
-          </h1>
-          <div className="underscore"><div></div></div>
-          <h2 className="subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus nulla est, at porttitor metus pulvinar laoreet. In ac ipsum at augue dapibus malesuada at in odio. Duis tempor vel ante vitae rhoncus. Cras eu purus at erat vehicula aliquam ut a purus. Donec pretium ut augue quis laoreet. Donec nec urna ut arcu ultrices tincidunt. Phasellus sed justo molestie, vulputate nulla at, viverra tellus. Fusce nisl diam, placerat hendrerit libero vitae, finibus luctus mauris. Quisque non dui id ligula venenatis efficitur quis euismod mi. Nam laoreet orci non aliquam maximus. Nunc dictum leo in ante sollicitudin, eu iaculis lacus rutrum.
           </h2>
+          <div className="underscore"><div></div></div>
+          <p className="body-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus nulla est, at porttitor metus pulvinar laoreet. In ac ipsum at augue dapibus malesuada at in odio. Duis tempor vel ante vitae rhoncus. Cras eu purus at erat vehicula aliquam ut a purus. Donec pretium ut augue quis laoreet. Donec nec urna ut arcu ultrices tincidunt. Phasellus sed justo molestie, vulputate nulla at, viverra tellus. Fusce nisl diam, placerat hendrerit libero vitae, finibus luctus mauris. Quisque non dui id ligula venenatis efficitur quis euismod mi. Nam laoreet orci non aliquam maximus. Nunc dictum leo in ante sollicitudin, eu iaculis lacus rutrum.
+          </p>
         </div>
       </div>
     </section>
 
     <section id="selling" className="hero is-taupe is-medium">
       <div className="hero-body">
-        <div className="container">
-          <h1 className="title has-text-centered">
+        <div className="container has-text-centered">
+          <h2 className="title">
             Interested In Selling?
-          </h1>
-          <div className="underscore"><div></div></div>
-          <h2 className="subtitle">
-            We're always buying inventory. Check out the link below to learn more about some of our frequently asked questions about selling.
           </h2>
-          <button className="button is-white">Learn More</button>
+          <div className="underscore"><div></div></div>
+          <p className="body-text has-text-centered">
+            We're always buying inventory. Check out the link below to learn more about some of our frequently asked questions about selling.
+          </p>
+          {/* <button className="button is-white">Contact Us</button> */}
+          <a className="button" href="mailto:revolutionsbookshop@gmail.com">Contact Us</a> 
         </div>
       </div>
     </section>
@@ -52,56 +55,49 @@ const IndexPage = ({ data: { allInstaNode } }) => (
     <section id="contact" className="hero is-white is-medium">
       <div className="hero-body">
         <div className="container">
-          <h1 className="title has-text-centered">
+          <h2 className="title has-text-centered">
             Hours & Location
-          </h1>
+          </h2>
           <div className="underscore"><div></div></div>
           <div className="columns">
             <div className="column">
-              {/* <GoogleMap
-                googleMapsApiKey="AIzaSyBP4Aqq6NqwOd5AlRHTTzoatb3BBAiMzNg" 
-                address={{
-                  lat: '45.5908652',
-                  lng: '-122.7552229'
-                }}
-              /> */}
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2791.985365619386!2d-122.7574852842266!3d45.59083893300484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a9278d21a269%3A0x983fffa92e9d53c!2sRevolutions%20Bookshop!5e0!3m2!1sen!2sus!4v1577594623557!5m2!1sen!2sus"
-                width="500"
-                height="500"
-                frameborder="0"
-                style={{ border:0 }}
-                allowfullscreen="false"></iframe>
+              <div className="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2791.985365619386!2d-122.7574852842266!3d45.59083893300484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a9278d21a269%3A0x983fffa92e9d53c!2sRevolutions%20Bookshop!5e0!3m2!1sen!2sus!4v1577594623557!5m2!1sen!2sus"
+                  width="100%"
+                  height="100%"
+                  frameBorder="0"
+                  style={{ border:0, marginRight: 40 }}
+                  allowFullScreen={false}></iframe>
+              </div>
             </div>
             <div className="column">
-              <div className="container">
-                <h1 className="title">
+              <div className="container contact-section">
+                <h3 className="title">
                   Hours
-                </h1>
-
+                </h3>
                 <ul>
-                  <li>Mon & Tues <span>Closed</span></li>
-                  <li>Weds, Thurs & Fri <span>12pm - 8pm</span></li>
-                  <li>Sat & Sun <span>10am - 5pm</span></li>
+                  <li><span>Mon & Tues</span> Closed</li>
+                  <li><span>Weds, Thurs & Fri</span> 12pm - 8pm</li>
+                  <li><span>Sat & Sun</span> 10am - 5pm</li>
                 </ul>
               </div>
               <hr />
-              <div className="container">
-                <h1 className="title">
+              <div className="container contact-section">
+                <h3 className="title">
                   Location
-                </h1>
+                </h3>
                 <p>8713 N Lombard</p>
                 <p>Portland, OR 97203</p>
                 <p>North Portland, St. Johns</p>
               </div>
               <hr />
-              <div className="container">
-                <h1 className="title">
+              <div className="container contact-section">
+                <h3 className="title">
                   Contact
-                </h1>
-                <p>8713 N Lombard</p>
-                <p>Portland, OR 97203</p>
-                <p>North Portland, St. Johns</p>
+                </h3>
+                  <p><span>T</span> 971-288-2391</p>
+                  <p><span>E</span> revolutionsbookshop@gmail.com</p>
               </div>
             </div>
           </div>
@@ -110,9 +106,9 @@ const IndexPage = ({ data: { allInstaNode } }) => (
     </section>
 
     <section className="section is-taupe">
-          <h1 className="title has-text-centered">
+          <h2 className="title has-text-centered">
             Follow Along
-          </h1>
+          </h2>
           <div className="underscore"><div></div></div>
       {/* <Container
         title="Public scraping"
@@ -123,7 +119,7 @@ const IndexPage = ({ data: { allInstaNode } }) => (
       <InstagramPosts nodes={allInstaNode} />
     </section>
 
-    {/* <h1>Hi people</h1>
+    {/* <h2>Hi people</h2>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p> */}
     {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}> */}

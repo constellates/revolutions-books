@@ -6,9 +6,15 @@ const NavBar = () => (
       <a className="navbar-item" href="https://revolutionsbookshop.com">
         Revolutions Bookshop
       </a>
+
+      {/* <a role="button" className="navbar-burger">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a> */}
     </div>
 
-      <div className="navbar-end is-size-4">
+      <div className="navbar-end is-size-4 is-hidden-mobile">
         <a className="navbar-item" href="#about">
           About
         </a>
@@ -22,6 +28,28 @@ const NavBar = () => (
         </a>
 
       </div>
+
+      {/* <div className="navbar-item has-dropdown is-hoverable">
+        <a className="navbar-item">
+          More
+        </a>
+
+        <div className="navbar-dropdown">
+          <a className="navbar-item">
+            About
+          </a>
+          <a className="navbar-item">
+            Jobs
+          </a>
+          <a className="navbar-item">
+            Contact
+          </a>
+          <hr className="navbar-divider" />
+          <a className="navbar-item">
+            Report an issue
+          </a>
+        </div>
+      </div> */}
 
   </nav>
 )
