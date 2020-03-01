@@ -12,42 +12,38 @@ const IndexPage = ({ data: { allInstaNode } }) => (
 
     <div className="navbar-spacer"></div>
 
-    <section className="hero is-link is-huge has-bg-img">
-      <div className="hero-body">
-        <div className="container">
-          <h1 className="hero-title has-text-centered">
+    <section className="hero is-huge">
+      {/* <div className="hero-body"> */}
+        {/* <div className="container"> */}
+
+      <img src={'/revolutions-bookshop-logo.svg'} alt="Logo" className="logo" />
+          {/* <h1 className="hero-title has-text-centered">
             We buy and sell new and used books, vinyl and collectibles.
-          </h1>
-        </div>
-      </div>
+          </h1> */}
+        {/* </div> */}
+      {/* </div> */}
     </section>
 
-    <section id="about" className="hero is-white is-medium">
+    <section id="about" className="hero is-taupe is-medium">
       <div className="hero-body">
         <div className="container">
-          <h2 className="title has-text-centered">
-            About Us
-          </h2>
-          <div className="underscore"><div></div></div>
-          <p className="body-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus nulla est, at porttitor metus pulvinar laoreet. In ac ipsum at augue dapibus malesuada at in odio. Duis tempor vel ante vitae rhoncus. Cras eu purus at erat vehicula aliquam ut a purus. Donec pretium ut augue quis laoreet. Donec nec urna ut arcu ultrices tincidunt. Phasellus sed justo molestie, vulputate nulla at, viverra tellus. Fusce nisl diam, placerat hendrerit libero vitae, finibus luctus mauris. Quisque non dui id ligula venenatis efficitur quis euismod mi. Nam laoreet orci non aliquam maximus. Nunc dictum leo in ante sollicitudin, eu iaculis lacus rutrum.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="selling" className="hero is-taupe is-medium">
-      <div className="hero-body">
-        <div className="container has-text-centered">
-          <h2 className="title">
-            Interested In Selling?
-          </h2>
-          <div className="underscore"><div></div></div>
-          <p className="body-text has-text-centered">
-            We're always buying inventory. Check out the link below to learn more about some of our frequently asked questions about selling.
-          </p>
-          {/* <button className="button is-white">Contact Us</button> */}
-          <a className="button" href="mailto:revolutionsbookshop@gmail.com">Contact Us</a> 
+          <div className="columns">
+            <div className="column">
+              <h2 className="title has-text-centered">
+                About Us
+              </h2>
+              <div className="underscore"><div></div></div>
+              <p className="body-text">
+                We are a small, independent bookstore specializing in a curated selection of mostly used books, some new books, vinyl, and collectibles.   Our academic and punk roots make for a bold selection in all genres, especially everything weird and wonderful.  We buy books and vinyl.  Call for more information.
+                <br/>
+                <br/>
+                Peggy & Brian Manning, Proprietors.
+              </p>
+            </div>
+            <div className="column">
+              <img src={'/about-us.jpg'} alt="Logo" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -76,11 +72,9 @@ const IndexPage = ({ data: { allInstaNode } }) => (
                 <h3 className="title">
                   Hours
                 </h3>
-                <ul>
-                  <li><span>Mon & Tues</span> Closed</li>
-                  <li><span>Weds, Thurs & Fri</span> 12pm - 8pm</li>
-                  <li><span>Sat & Sun</span> 10am - 5pm</li>
-                </ul>
+                <p>
+                  Check google maps listing for up to date hours.
+                </p>
               </div>
               <hr />
               <div className="container contact-section">

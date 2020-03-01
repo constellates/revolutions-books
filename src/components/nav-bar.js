@@ -1,57 +1,59 @@
-import React from "react"
+import React, { Component } from "react"
 
-const NavBar = () => (
-  <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-    <div className="navbar-brand is-size-3 is-capitalized has-text-weight-semibold">
-      <a className="navbar-item" href="https://revolutionsbookshop.com">
-        Revolutions Bookshop
-      </a>
+class NavBar extends Component {
+  state = {
+    menuActive: false
+  };
 
-      {/* <a role="button" className="navbar-burger">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a> */}
-    </div>
+  toggleMenu = () => {
+    this.setState({
+      menuActive: !this.state.menuActive
+    });
+  }
 
-      <div className="navbar-end is-size-4 is-hidden-mobile">
-        <a className="navbar-item" href="#about">
-          About
-        </a>
+  render() {
 
-        <a className="navbar-item" href="#hours">
-          Hours
-        </a>
+    return (
+      <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div className="navbar-brand is-size-3 is-capitalized has-text-weight-semibold">
+          <a className="navbar-item" href="https://revolutionsbookshop.com">
+            Revolutions Bookshop
+          </a>
+          <span className={`navbar-burger burger ${this.state.menuActive ? 'is-active' : ''}`} data-target="navMenu" onClick={this.toggleMenu}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
 
-        <a className="navbar-item" href="#contact">
-          Contact
-        </a>
+        {/* Mobile */}
+        <div id="navMenu" className={`navbar-menu is-hidden-desktop ${this.state.menuActive ? 'is-active' : ''}`}>
+          <div className="navbar-end">
+            <a className="navbar-item" href="#about" onClick={this.toggleMenu}>
+              About
+            </a>
 
-      </div>
+            <a className="navbar-item" href="#contact" onClick={this.toggleMenu}>
+              Contact
+            </a>
+          </div>
+        </div>
 
-      {/* <div className="navbar-item has-dropdown is-hoverable">
-        <a className="navbar-item">
-          More
-        </a>
-
-        <div className="navbar-dropdown">
-          <a className="navbar-item">
+        {/* Desktop */}
+        <div className="navbar-end is-size-4 is-hidden-touch">
+          <a className="navbar-item" href="#about">
             About
           </a>
-          <a className="navbar-item">
-            Jobs
-          </a>
-          <a className="navbar-item">
+
+          <a className="navbar-item" href="#contact">
             Contact
           </a>
-          <hr className="navbar-divider" />
-          <a className="navbar-item">
-            Report an issue
-          </a>
-        </div>
-      </div> */}
 
-  </nav>
-)
+        </div>
+
+      </nav>
+    );
+  }
+}
 
 export default NavBar
