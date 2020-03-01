@@ -10,7 +10,7 @@ const IndexPage = ({ data: { allInstaNode } }) => (
   <Layout>
     <SEO title="Home" />
 
-    <div className="navbar-spacer"></div>
+    <div className="navbar-spacer is-hidden-mobile"></div>
 
     <section className="hero is-huge">
       {/* <div className="hero-body"> */}

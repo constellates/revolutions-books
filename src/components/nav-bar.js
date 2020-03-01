@@ -14,7 +14,7 @@ class NavBar extends Component {
   render() {
 
     return (
-      <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <nav className="navbar is-fixed-top is-hidden-mobile" role="navigation" aria-label="main navigation">
         <div className="navbar-brand is-size-3 is-capitalized has-text-weight-semibold">
           <a className="navbar-item" href="https://revolutionsbookshop.com">
             Revolutions Bookshop
@@ -48,9 +48,7 @@ class NavBar extends Component {
           <a className="navbar-item" href="#contact">
             Contact
           </a>
-
         </div>
-
       </nav>
     );
   }
