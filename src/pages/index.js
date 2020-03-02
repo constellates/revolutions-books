@@ -2,26 +2,17 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
-// import Image from "../components/image"
 import InstagramPosts from "../components/instagram-posts"
 import SEO from "../components/seo"
 
 const IndexPage = ({ data: { allInstaNode } }) => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Revolutions Bookshop" />
 
     <div className="navbar-spacer is-hidden-mobile"></div>
 
     <section className="hero is-huge">
-      {/* <div className="hero-body"> */}
-        {/* <div className="container"> */}
-
       <img src={'/revolutions-bookshop-logo.svg'} alt="Logo" className="logo" />
-          {/* <h1 className="hero-title has-text-centered">
-            We buy and sell new and used books, vinyl and collectibles.
-          </h1> */}
-        {/* </div> */}
-      {/* </div> */}
     </section>
 
     <section id="about" className="hero is-taupe is-medium">
