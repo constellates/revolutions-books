@@ -117,7 +117,7 @@ const IndexPage = ({ data: { allInstaNode } }) => (
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allInstaNode(filter: { username: { eq: "revolutionsbookshop" } }) {
+    allInstaNode(filter: { username: { eq: "21644687892" } }, sort: {order: DESC, fields: timestamp}) {
       edges {
         node {
           id
